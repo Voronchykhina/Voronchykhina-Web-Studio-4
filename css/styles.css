@@ -7,7 +7,7 @@
   --accent-color: #e7e9fc;
   --light-color: #f4f4fd;
   /* --success-color: #31d0aa; */
-  /* --subtletext-color: #8e8f99; */
+  --subtext-color: #8e8f99;
   --padding-top: 120px;
   --padding-bottom: 120px;
   --max-width: 264px;
@@ -187,6 +187,11 @@ img {
   color: var(--pressed-state-color);
 }
 
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--pressed-state-color);
+}
+
 .header-contact {
   display: flex;
   margin-left: auto;
@@ -201,6 +206,11 @@ img {
   letter-spacing: 2%;
   /* font-style: normal; */
   color: var(--text-color);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--pressed-state-color);
 }
 
 .header-contact-item:not(:last-child) {
@@ -279,8 +289,13 @@ img {
   margin-right: var(--margin-right);
 }
 
+.uberuns-icon {
+  background-color: var(--light-color);
+}
+
 .uberuns-subtitel {
   text-align: left;
+  margin-top: var(--margin-bottom-text);
   margin-bottom: var(--margin-bottom-text);
 }
 
@@ -382,10 +397,52 @@ img {
   background-color: var(--primarybrand-color);
   fill: var(--accent-color);
 }
+/*  */
+/* .team-soc-link:focus { */
+/* background-color: var(--primarybrand-color); */
+/* fill: var(--accent-color); */
+/* } */
+/*  */
 
-.team-soc-link:focus {
-  background-color: var(--primarybrand-color);
-  fill: var(--accent-color);
+/*! ----------CUSTOMERS -------*/
+
+.customers {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.customers-title {
+  margin-bottom: var(--mardin-bottom-subtitle);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-item + .customers-item {
+  margin-left: 24px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtext-color);
+  border-radius: 4px;
+  fill: var(--subtext-color);
+}
+
+.customers-link:hover {
+  border: 1px solid var(--primarybrand-color);
+  fill: var(--primarybrand-color);
+}
+
+.customers-link:focus {
+  border: 1px solid var(--primarybrand-color);
+  fill: var(--primarybrand-color);
 }
 
 /*! ----------FOOTER -------*/
@@ -447,6 +504,9 @@ img {
 .portfolio-btn:focus {
   background-color: var(--pressed-state-color);
   color: var(--second-text-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list {
