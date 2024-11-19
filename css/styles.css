@@ -171,7 +171,6 @@ img {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -181,6 +180,14 @@ img {
 
 .header-menu-link.current {
   color: var(--pressed-state-color);
+}
+
+.header-menu-link.current::after {
+  display: block;
+  content: "";
+  border-bottom: 4px solid currentColor;
+  border-radius: 2px;
+  /* margin-top: 20px; */
 }
 
 .header-menu-link:active {
@@ -453,6 +460,14 @@ img {
   padding-bottom: 100px;
 }
 
+.footer-contacts {
+  display: flex;
+}
+
+.footer-info {
+  margin-right: 120px;
+}
+
 .footer-logo {
 }
 
@@ -464,7 +479,58 @@ img {
   text-align: left;
   color: var(--accent-color);
   max-width: var(--max-width);
+
+  margin-bottom: 16px;
+}
+
+.footer-foot-text {
   margin-top: 16px;
+}
+
+.footer-media {
+  text-align: center;
+  margin-bottom: var(--margin-bottom-text);
+  margin-right: 80px;
+}
+
+.footer-media-text {
+}
+
+.footer-media-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-media-item {
+}
+
+.footer-media-item + .footer-media-item {
+  margin-left: 16px;
+}
+
+.footer-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--dark-color);
+}
+
+.footer-media-link:hover {
+  background-color: var(--primarybrand-color);
+  fill: var(--accent-color);
+}
+
+.footer-media-icon {
+}
+
+.footer-subscribe {
+}
+
+.footer-subscribe-text {
 }
 
 /*! ----------PORTFOLIO -------*/
