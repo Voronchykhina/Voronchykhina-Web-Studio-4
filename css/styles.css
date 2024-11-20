@@ -143,12 +143,12 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
-.main-nav {
+.header .container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .logo-link {
@@ -169,8 +169,6 @@ img {
 
 .header-menu-link {
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -582,6 +580,17 @@ img {
   /* margin-left: -6px; чтобы поместить в строку 3 элемента */
 }
 
+.portfolio-link {
+  display: block;
+}
+
+/* .portfolio-link:hover, */
+/* .portfolio-link:focus { */
+/* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
+/* box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16); */
+/* box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
+/* } */
+/*  */
 .portfolio-item {
   margin: 15px;
   flex-basis: calc((100% - 90px) / 3);
@@ -599,6 +608,14 @@ img {
 /* .portfolio-item:nth-child(3n) { */
 /* margin-right: 0; */
 /* } */
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
 .portfolio-description {
   margin-top: var(--margin-bottom-img);
